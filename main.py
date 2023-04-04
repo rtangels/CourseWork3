@@ -1,16 +1,18 @@
-# This is a sample Python script.
+from functions import *
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from pprint import pprint
+
+way='operations.json'
+def main():
+    print('main')
+    box_list = born_list(way)
+    box_list = filter_by_state(box_list)
+    box_list = sort_by_date(box_list)
+    box_list = formated_output(box_list)
+    for d in box_list:
+        print(d)
+        print('\n\n')
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__== '__main__':
+    main()
