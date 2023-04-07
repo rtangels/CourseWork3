@@ -1,8 +1,8 @@
 from functions import *
 
-from pprint import pprint
+way = 'operations.json'
 
-way='operations.json'
+
 def main():
     print('main')
     box_list = born_list(way)
@@ -14,5 +14,5 @@ def main():
         print('\n\n')
 
 
-if __name__== '__main__':
+if __name__ == '__main__':
     main()
